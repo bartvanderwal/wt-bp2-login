@@ -17,14 +17,14 @@
     <nav>
         <?php // TODO.. menu maken ?>
         <div>
-            <h2>Hoofd menu 1</h2>
+            <h2>Hoofd menu A</h2>
             <ul>
                 <li><a href="/php/lessen/bp2">Home</a></li>
                 <li><a href="login.php">Login</a></li>
             </ul>
         </div>
         <div>
-            <h2>Hoofd menu 2</h2>
+            <h2>Hoofd menu B</h2>
             <ul>
                 <li>Item 2-1</li>
                 <li>Item 2-2</li>

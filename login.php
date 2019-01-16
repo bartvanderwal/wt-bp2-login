@@ -1,6 +1,11 @@
 <?php
     require_once '_includes/functions.php';
     session_start();
+
+    if (isset($_SESSION['gebruikersnaam'])) {
+        $gebruikersnaam = $_SESSION['gebruikersnaam'];
+    }
+
 ?>
 <!doctype html>
 <html lang="nl">
@@ -27,7 +32,7 @@
             </div>
             <div>
                 <label for="login">Login</label>
-                <input type="text" name="login">
+                <input type="text" value="<?= $gebruikersnaam ?>" placeholder="login..." name="login">
             </div>
             <div>
                 <label for="wachtwoord">Wachtwoord</label>

@@ -32,8 +32,8 @@
 
         // Zet foutmelding en stuur naar login pagina.
         session_start();
+        $_SESSION['gebruikersnaam'] = $login;
         $_SESSION['foutmelding'] = $foutmelding;
-        $_SESSION['login'] = '';
         header('location: ../login.php');
     } else {
         $records = $resultSet->fetchAll(PDO::FETCH_ASSOC);
@@ -43,6 +43,7 @@
     var_dump($records);
     $hashedWachtwoord = $records[0];
 
+
     // Controleer of wachtwoord klopt met gehashte wachtwoord uit de database via standaard PHP functie.
     $geldigeLogin = password_verify($wachtwoord, $hashedWachtwoord);
 
@@ -50,11 +51,10 @@
     // TODO: Redirect.
     if ($geldigeLogin) {
         // Gebruikersnaam opslaan in sessie
-        $_SESSION['gebruikersnaam'] = $login;
         header('location: ../index');
     } else {
         $_SESSION['foutmelding'] = $foutmelding;
-        header('location: ../do-login.php');
+        header('location: login.php');
     }
     */
 ?>
