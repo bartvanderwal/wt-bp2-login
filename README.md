@@ -1,4 +1,10 @@
 # Beroepsproduct 2
+Klein opzetje met:
+- voorbeeld voor blogs beheren via PDO.
+- inloggen met gebruik password_verify
+- nog geen registreren
+
+NB: Werkt tegen een MySQL database, niet getest met SQL Server.
 
 ## Inloggen
 Het is niet toegestaan om in je database wachtwoorden ongehashed op te slaan. 
