@@ -1,0 +1,52 @@
+header {
+}
+
+nav {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+
+nav div {
+    flex-direction: column;
+}
+
+nav h2+ul li {
+    display: none;
+}
+
+nav:hover h2+ul li {
+    display: block;
+}
+
+.login-form {
+    margin-top: 25px;
+}
+
+.big-login-form {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.big-login-form div label {
+    display: inline-block;
+    margin: 10px 20px;
+    width: 100px;
+    text-align: right;
+}
+
+.foutmelding {
+    color: red;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.big-login-form div input {
+    margin: 10px 20px;
+    width: 150px;
+}
+
+.big-login-form div input[type=submit] {
+    margin: 10px 20px;
+    width: inherit;
+}
